@@ -1,0 +1,2152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>574 Alaska Firewood LLC – Premium Firewood Delivered</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+    <style>
+        /* ============================================================
+       CSS CUSTOM PROPERTIES – Brand Palette & Globals
+    ============================================================ */
+        :root {
+            --cream: #FAF3E8;
+            --saddle: #7A4E2D;
+            --ember: #D97706;
+            --ember-dark: #B45309;
+            --bark: #3B2F2F;
+            --evergreen: #355E3B;
+            --evergreen-light: #4A7A51;
+            --off-white: #F5EBD8;
+            --muted: #9A8778;
+
+
+            --font-display: 'Playfair Display', Georgia, serif;
+            --font-body: 'Source Sans 3', sans-serif;
+
+            --radius-sm: 6px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+
+            --shadow-sm: 0 2px 8px rgba(59, 47, 47, .08);
+            --shadow-md: 0 6px 24px rgba(59, 47, 47, .12);
+            --shadow-lg: 0 16px 48px rgba(59, 47, 47, .16);
+
+            --transition: 0.25s ease;
+        }
+
+        /* ============================================================
+   RESET & BASE
+============================================================ */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--cream);
+            color: var(--bark);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        section {
+            position: relative;
+        }
+
+        /* ============================================================
+   UTILITY CLASSES
+============================================================ */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: var(--font-body);
+            font-weight: 700;
+            font-size: 0.95rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            padding: 14px 28px;
+            border-radius: var(--radius-sm);
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: background var(--transition), color var(--transition),
+                border-color var(--transition), transform var(--transition),
+                box-shadow var(--transition);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn-ember {
+            background: var(--ember);
+            color: #fff;
+            border-color: var(--ember);
+        }
+
+        .btn-ember:hover {
+            background: var(--ember-dark);
+            border-color: var(--ember-dark);
+        }
+
+        .btn-outline-cream {
+            background: transparent;
+            color: var(--cream);
+            border-color: rgba(250, 243, 232, .5);
+        }
+
+        .btn-outline-cream:hover {
+            background: rgba(250, 243, 232, .12);
+            border-color: var(--cream);
+        }
+
+        .btn-outline-ember {
+            background: transparent;
+            color: var(--ember);
+            border-color: var(--ember);
+        }
+
+        .btn-outline-ember:hover {
+            background: var(--ember);
+            color: #fff;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--evergreen);
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 900;
+            color: var(--saddle);
+            line-height: 1.15;
+            margin-bottom: 16px;
+        }
+
+        .section-sub {
+            font-size: 1.05rem;
+            color: var(--muted);
+            max-width: 560px;
+            line-height: 1.75;
+        }
+
+        /* ============================================================
+   GRAIN TEXTURE OVERLAY (subtle depth)
+============================================================ */
+        .grain::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url("/IMG_0146.PNG width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+            pointer-events: none;
+            z-index: 1;
+            opacity: .5;
+        }
+
+
+        /* ============================================================
+   NAVBAR
+============================================================ */
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: background var(--transition), box-shadow var(--transition);
+            padding: 0;
+        }
+
+        #navbar.scrolled {
+            background: var(--saddle);
+            box-shadow: 0 2px 20px rgba(59, 47, 47, .25);
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+            gap: 32px;
+        }
+
+        /* Logo */
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
+        .logo-mark {
+            width: 40px;
+            height: 40px;
+            background: var(--ember);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-weight: 900;
+            font-size: 1.1rem;
+            color: #fff;
+            letter-spacing: -1px;
+            flex-shrink: 0;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .logo-name {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 1rem;
+            color: #fff;
+        }
+
+        .logo-sub {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, .6);
+        }
+
+        .logo-img {
+            width: 66px;
+            height: 66px;
+            object-fit: contain;
+        }
+
+        /* Nav links */
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-weight: 600;
+            font-size: 0.875rem;
+            letter-spacing: 0.04em;
+            color: rgba(255, 255, 255, .85);
+            padding: 6px 14px;
+            border-radius: var(--radius-sm);
+            transition: color var(--transition), background var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, .1);
+        }
+
+        /* Mobile hamburger */
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .nav-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: #fff;
+            border-radius: 2px;
+            transition: transform var(--transition), opacity var(--transition);
+        }
+
+        .nav-mobile {
+            display: none;
+            flex-direction: column;
+            background: var(--saddle);
+            padding: 20px 24px 24px;
+            gap: 4px;
+        }
+
+        .nav-mobile a {
+            font-weight: 600;
+            font-size: 1rem;
+            color: rgba(255, 255, 255, .9);
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, .1);
+            transition: color var(--transition);
+        }
+
+        .nav-mobile a:last-child {
+            border-bottom: none;
+        }
+
+        .nav-mobile a:hover {
+            color: var(--ember);
+        }
+
+        /* ============================================================
+   HERO SECTION
+============================================================ */
+        #hero {
+            min-height: 100vh;
+            background:
+                linear-gradient(160deg, rgba(59, 47, 47, .82) 0%, rgba(53, 94, 59, .70) 100%),
+                url("ata:image/svg+xml,%3Csvg xmlns='hdttp://www.w3.org/2000/svg' width='60' height='60'%3E%3Crect width='60' height='60' fill='%235c3a1e'/%3E%3Crect x='10' y='10' width='8' height='40' rx='2' fill='%234a2e16' opacity='.6'/%3E%3Crect x='28' y='5' width='6' height='50' rx='2' fill='%236b4423' opacity='.4'/%3E%3Crect x='42' y='15' width='7' height='35' rx='2' fill='%233d2410' opacity='.5'/%3E%3C/svg%3E");
+            background-size: cover, 60px 60px;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            padding-top: 72px;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 80px 0;
+            max-width: 720px;
+        }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(217, 119, 6, .2);
+            border: 1px solid rgba(217, 119, 6, .4);
+            color: #FCD34D;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 6px 14px;
+            border-radius: 99px;
+            margin-bottom: 28px;
+        }
+
+        .hero-eyebrow::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: var(--ember);
+            border-radius: 50%;
+        }
+
+        .hero-headline {
+            font-family: var(--font-display);
+            font-size: clamp(2.8rem, 7vw, 5.5rem);
+            font-weight: 900;
+            color: #fff;
+            line-height: 1.05;
+            margin-bottom: 24px;
+            letter-spacing: -0.01em;
+        }
+
+        .hero-headline em {
+            font-style: normal;
+            color: #FCD34D;
+        }
+
+        .hero-sub {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: rgba(255, 255, 255, .78);
+            max-width: 520px;
+            line-height: 1.75;
+            margin-bottom: 40px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .hero-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .stat {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .stat-num {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 900;
+            color: #fff;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, .55);
+        }
+
+        /* Decorative fire icon */
+        .hero-deco {
+            position: absolute;
+            right: -40px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 380px;
+            height: 380px;
+            opacity: 0.07;
+            pointer-events: none;
+        }
+
+        /* ============================================================
+   FEATURES / VALUE PROPS
+============================================================ */
+        #features {
+            background: var(--cream);
+            padding: 100px 0;
+        }
+
+        .features-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .features-header .section-sub {
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 32px;
+        }
+
+        .feature-card {
+            background: #fff;
+            border: 1px solid rgba(122, 78, 45, .1);
+            border-radius: var(--radius-md);
+            padding: 36px 28px;
+            transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--evergreen);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: rgba(53, 94, 59, .2);
+        }
+
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .feature-icon {
+            width: 52px;
+            height: 52px;
+            background: rgba(53, 94, 59, .1);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            transition: background var(--transition);
+        }
+
+        .feature-card:hover .feature-icon {
+            background: rgba(53, 94, 59, .18);
+        }
+
+        .feature-title {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--saddle);
+            margin-bottom: 10px;
+        }
+
+        .feature-desc {
+            font-size: 0.92rem;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        /* ============================================================
+   ABOUT SECTION
+============================================================ */
+        #about {
+            background: var(--off-white);
+            padding: 100px 0;
+            overflow: hidden;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+        }
+
+        about-img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .about-img-label {
+            font-family: var(--font-body);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, .5);
+            position: relative;
+            z-index: 1;
+        }
+
+        .about-badge {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: var(--ember);
+            color: #fff;
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+            box-shadow: var(--shadow-md);
+            text-align: center;
+        }
+
+        .badge-num {
+            font-family: var(--font-display);
+            font-weight: 900;
+            font-size: 1.8rem;
+            line-height: 1;
+        }
+
+        .badge-text {
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            line-height: 1.3;
+            padding: 0 10px;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .about-content p {
+            font-size: 1rem;
+            color: var(--bark);
+            line-height: 1.8;
+        }
+
+        .about-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .about-list li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--bark);
+        }
+
+        .about-list li::before {
+            content: '✓';
+            width: 22px;
+            height: 22px;
+            background: rgba(53, 94, 59, .12);
+            color: var(--evergreen);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 900;
+            flex-shrink: 0;
+        }
+
+        /* ============================================================
+   PRICING / PRODUCTS
+============================================================ */
+        #pricing {
+            padding: 100px 0;
+            background: var(--cream);
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .pricing-header .section-sub {
+            margin: 0 auto;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 28px;
+            align-items: start;
+        }
+
+        .price-card {
+            background: #fff;
+            border: 1.5px solid rgba(122, 78, 45, .12);
+            border-radius: var(--radius-md);
+            padding: 36px 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            transition: transform var(--transition), box-shadow var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .price-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Featured card */
+        .price-card.featured {
+            border-color: var(--ember);
+            background: var(--saddle);
+        }
+
+        .price-card.featured .price-name {
+            color: rgba(255, 255, 255, .7);
+        }
+
+        .price-card.featured .price-amount {
+            color: #fff;
+        }
+
+        .price-card.featured .price-unit {
+            color: rgba(255, 255, 255, .5);
+        }
+
+        .price-card.featured .price-desc {
+            color: rgba(255, 255, 255, .65);
+        }
+
+        .price-card.featured .price-feature {
+            color: rgba(255, 255, 255, .8);
+        }
+
+        .price-card.featured .price-feature::before {
+            background: rgba(217, 119, 6, .2);
+            color: #FCD34D;
+        }
+
+        .featured-badge {
+            position: absolute;
+            top: 20px;
+            right: -28px;
+            background: var(--ember);
+            color: #fff;
+            font-size: 0.65rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+        }
+
+        .price-name {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        .price-top {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .price-amount-row {
+            display: flex;
+            align-items: flex-end;
+            gap: 6px;
+        }
+
+        .price-amount {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--saddle);
+            line-height: 1;
+        }
+
+        .price-unit {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--muted);
+            padding-bottom: 6px;
+        }
+
+        .price-desc {
+            font-size: 0.9rem;
+            color: var(--muted);
+            line-height: 1.65;
+        }
+
+        .price-divider {
+            height: 1px;
+            background: rgba(122, 78, 45, .1);
+        }
+
+        .price-card.featured .price-divider {
+            background: rgba(255, 255, 255, .15);
+        }
+
+        .price-features {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .price-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.88rem;
+            color: var(--bark);
+        }
+
+        .price-feature::before {
+            content: '✓';
+            width: 20px;
+            height: 20px;
+            background: rgba(53, 94, 59, .1);
+            color: var(--evergreen);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: 900;
+            flex-shrink: 0;
+        }
+
+        /* ============================================================
+   DELIVERY INFO SECTION
+============================================================ */
+        #delivery {
+            padding: 100px 0;
+            background: var(--off-white);
+        }
+
+        .delivery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .delivery-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .step {
+            display: flex;
+            gap: 20px;
+            position: relative;
+        }
+
+        .step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 19px;
+            top: 44px;
+            width: 2px;
+            height: calc(100% - 24px);
+            background: rgba(53, 94, 59, .15);
+        }
+
+        .step-num {
+            width: 40px;
+            height: 40px;
+            background: var(--evergreen);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-weight: 900;
+            font-size: 0.95rem;
+            flex-shrink: 0;
+            z-index: 1;
+        }
+
+        .step-body {
+            padding: 8px 0 36px;
+        }
+
+        .step-title {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--saddle);
+            margin-bottom: 6px;
+        }
+
+        .step-desc {
+            font-size: 0.9rem;
+            color: var(--muted);
+            line-height: 1.65;
+        }
+
+        .delivery-info {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        .info-card {
+            display: flex;
+            gap: 16px;
+            background: #fff;
+            border: 1px solid rgba(122, 78, 45, .1);
+            border-left: 4px solid var(--evergreen);
+            border-radius: var(--radius-sm);
+            padding: 20px;
+        }
+
+        .info-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            line-height: 1;
+        }
+
+        .info-title {
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--saddle);
+            margin-bottom: 4px;
+        }
+
+        .info-text {
+            font-size: 0.85rem;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        /* ============================================================
+   TESTIMONIALS
+============================================================ */
+        #testimonials {
+            padding: 100px 0;
+            background: var(--cream);
+        }
+
+        .testimonials-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .testimonials-header .section-sub {
+            margin: 0 auto;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 28px;
+        }
+
+        .testimonial-card {
+            background: #fff;
+            border: 1px solid rgba(122, 78, 45, .1);
+            border-radius: var(--radius-md);
+            padding: 32px 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            transition: transform var(--transition), box-shadow var(--transition);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .stars {
+            display: flex;
+            gap: 3px;
+            color: var(--ember);
+            font-size: 1rem;
+        }
+
+        .testimonial-text {
+            font-size: 0.95rem;
+            color: var(--bark);
+            line-height: 1.75;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: auto;
+        }
+
+        .author-avatar {
+            width: 44px;
+            height: 44px;
+            background: var(--saddle);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 1rem;
+            color: #fff;
+            flex-shrink: 0;
+        }
+
+        .author-name {
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--bark);
+        }
+
+        .author-loc {
+            font-size: 0.78rem;
+            color: var(--muted);
+        }
+
+        /* ============================================================
+   CTA BAND
+============================================================ */
+        #cta {
+            padding: 100px 0;
+            background: var(--saddle);
+            position: relative;
+            overflow: hidden;
+        }
+
+        #cta::before {
+            content: '';
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: rgba(217, 119, 6, .12);
+            pointer-events: none;
+        }
+
+        #cta::after {
+            content: '';
+            position: absolute;
+            bottom: -80px;
+            left: -40px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: rgba(53, 94, 59, .15);
+            pointer-events: none;
+        }
+
+        .cta-inner {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 24px;
+        }
+
+        .cta-inner .section-label {
+            color: #FCD34D;
+        }
+
+        .cta-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            color: #fff;
+            line-height: 1.1;
+            max-width: 700px;
+        }
+
+        .cta-sub {
+            font-size: 1.05rem;
+            color: rgba(255, 255, 255, .7);
+            max-width: 480px;
+            line-height: 1.7;
+        }
+
+        .cta-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            margin-top: 8px;
+        }
+
+        /* ============================================================
+   FOOTER
+============================================================ */
+        #footer {
+            background: var(--bark);
+            padding: 60px 0 32px;
+        }
+
+        .footer-top {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 48px;
+            width: 100%;
+        }
+
+        .footer-brand {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-tagline {
+            font-size: 0.88rem;
+            color: rgba(255, 255, 255, .5);
+            line-height: 1.7;
+            max-width: 260px;
+        }
+
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .footer-contact a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, .6);
+            transition: color var(--transition);
+        }
+
+        .footer-contact a:hover {
+            color: var(--ember);
+        }
+
+        .footer-col h4 {
+            font-family: var(--font-display);
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255, .9);
+            letter-spacing: 0.04em;
+            margin-bottom: 16px;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, .5);
+            transition: color var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: rgba(255, 255, 255, .9);
+        }
+
+        .footer-bottom {
+            padding-top: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .footer-copy {
+            font-size: 0.78rem;
+            color: rgba(255, 255, 255, .3);
+        }
+
+        .footer-legal {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-legal a {
+            font-size: 0.78rem;
+            color: rgba(255, 255, 255, .3);
+            transition: color var(--transition);
+        }
+
+        .footer-legal a:hover {
+            color: rgba(255, 255, 255, .6);
+        }
+
+        /* ============================================================
+   SCROLL REVEAL ANIMATIONS
+============================================================ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 {
+            transition-delay: 0.1s;
+        }
+
+        .reveal-delay-2 {
+            transition-delay: 0.2s;
+        }
+
+        .reveal-delay-3 {
+            transition-delay: 0.3s;
+        }
+
+        .reveal-delay-4 {
+            transition-delay: 0.4s;
+        }
+
+        /* ============================================================
+   RESPONSIVE
+============================================================ */
+        @media (max-width: 900px) {
+
+            .about-grid,
+            .delivery-grid {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+
+            .about-badge {
+                bottom: -10px;
+                right: -10px;
+                width: 90px;
+                height: 90px;
+            }
+
+            .badge-num {
+                font-size: 1.4rem;
+            }
+
+            .footer-top>* {
+                min-width: 0;
+            }
+
+            .footer-brand {
+                grid-column: 1 / -1;
+            }
+        }
+
+        @media (max-width: 640px) {
+
+            .nav-links,
+            .nav-links+.btn {
+                display: none;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .hero-headline {
+                font-size: clamp(2.2rem, 9vw, 3.2rem);
+            }
+
+            .hero-stats {
+                gap: 28px;
+            }
+
+            .footer-top {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        #contact {
+            padding: 100px 0;
+            background: var(--off-white);
+        }
+
+
+        .contact-form {
+            max-width: 700px;
+            margin: 40px auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+
+        .form-group label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 12px 14px;
+            border-radius: var(--radius-sm);
+            border: 1px solid rgba(122, 78, 45, .2);
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            background: #fff;
+            transition: border var(--transition), box-shadow var(--transition);
+        }
+
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--ember);
+            box-shadow: 0 0 0 2px rgba(217, 119, 6, .2);
+        }
+
+
+        .contact-form button {
+            align-self: flex-start;
+            margin-top: 10px;
+        }
+
+
+        /* Mobile */
+        @media (max-width: 640px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        #footer .container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+
+    <header id="navbar">
+        <div class="container">
+            <nav class="nav-inner">
+
+
+                <!-- Logo -->
+                <a href="#" class="nav-logo" aria-label="574 Alaska Firewood Home">
+                    <img src="/images/download.png" alt="574 Alaska Firewood Logo" class="logo-img" />
+                    <div class="logo-text">
+                        <span class="logo-name">Alaska Firewood</span>
+                        <span class="logo-sub">LLC</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#delivery">Delivery</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+
+                <!-- CTA + Mobile Toggle -->
+                <a href="#contact" class="btn btn-ember">Order Now</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+
+            </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="nav-mobile" id="navMobile">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#delivery">Delivery</a>
+            <a href="#footer">Contact</a>
+            <a href="#pricing" style="color:var(--ember);margin-top:8px;">Order Now →</a>
+        </div>
+
+
+    </header>
+
+    <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+
+    <section id="hero" class="grain">
+        <div class="container">
+            <div class="hero-content">
+
+
+                <div class="hero-eyebrow">Locally Sourced · Seasoned · Ready to Burn</div>
+
+                <h1 class="hero-headline">
+                    Premium Firewood.<br>
+                    Delivered <em>Reliable.</em>
+                </h1>
+
+                <p class="hero-sub">
+                    Quality wood that lights fast, burns clean, and keeps you warm all season long.
+                    Serving Alaska with consistent loads, honest service, and same-week delivery.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#pricing" class="btn btn-ember">🔥 Order Firewood</a>
+                    <a href="#about" class="btn btn-outline-cream">Learn More</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">500+</span>
+                        <span class="stat-label">Cords Delivered</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">100%</span>
+                        <span class="stat-label">Satisfaction Rate</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">5★</span>
+                        <span class="stat-label">Avg. Rating</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- ============================================================
+       FEATURES / VALUE PROPS
+  ============================================================ -->
+
+    <section id="features">
+        <div class="container">
+
+
+            <div class="features-header reveal">
+                <span class="section-label">Why 574 Alaska Firewood</span>
+                <h2 class="section-title">Wood You Can Count On</h2>
+                <p class="section-sub">
+                    We take the guesswork out of firewood. Every load is prepared, measured,
+                    and delivered with care—so you can focus on staying warm.
+                </p>
+            </div>
+
+            <div class="features-grid">
+
+                <div class="feature-card reveal reveal-delay-1">
+                    <div class="feature-icon">🌲</div>
+                    <h3 class="feature-title">Properly seasoned</h3>
+                    <p class="feature-desc">
+                        Our wood is properly seasoned for clean, reliable burning with a strong heat output.
+                    </p>
+                </div>
+
+                <div class="feature-card reveal reveal-delay-2">
+                    <div class="feature-icon">🚚</div>
+                    <h3 class="feature-title">Reliable Delivery</h3>
+                    <p class="feature-desc">
+                        We show up on time, every time. Book your delivery and expect your order
+                        when we say it'll arrive—no waiting, no surprises.
+                    </p>
+                </div>
+
+                <div class="feature-card reveal reveal-delay-3">
+                    <div class="feature-icon">🪵</div>
+                    <h3 class="feature-title">Clean, Ready-to-Burn</h3>
+                    <p class="feature-desc">
+                        Properly split, free of rot and debris. Our firewood is ready to stack and
+                        burn straight from delivery—no prep work required.
+                    </p>
+                </div>
+
+                <div class="feature-card reveal reveal-delay-4">
+                    <div class="feature-icon">🤝</div>
+                    <h3 class="feature-title">Local &amp; Trusted</h3>
+                    <p class="feature-desc">
+                        Alaska-based, community-rooted. When you order from us, you're supporting
+                        a local business that takes pride in every single cord we deliver.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+
+    <<section id="about">
+        <div class="container">
+            <div class="about-grid">
+
+
+                <!-- Image Side -->
+                <div class="about-image reveal">
+                    <img src="/images/spruce.png" alt="Photo of firewood delivery truck" class="about-img" />
+
+                    <div class="about-badge">
+                        <img src="/images/download.png" alt="574 Alaska Firewood Logo" />
+                    </div>
+                </div>
+
+
+                <!-- Text Side -->
+                <div class="about-content reveal reveal-delay-2">
+                    <span class="section-label">Who We Are</span>
+                    <h2 class="section-title">Dependability Is Our Business</h2>
+                    <p>
+                        574 Alaska Firewood LLC was built on one simple idea: people deserve a firewood
+                        supplier they can actually rely on. Too many customers have been let down by
+                        late orders, green wood, or short loads—and we set out to change that.
+                    </p>
+                    <p>
+                        We're a local Alaska business that treats every order like it matters, because
+                        it does. Whether you're stocking up for a full winter season or need a quick
+                        delivery before the weekend, we bring the same quality and work ethic to
+                        every single job.
+                    </p>
+                    <ul class="about-list">
+                        <li>Fully measured and honest cord counts</li>
+                        <li>Birch, spruce, and mixed hardwood options</li>
+                        <li>Stacking service available on request</li>
+                        <li>Repeat customer discounts</li>
+                    </ul>
+                    <div style="margin-top:12px;">
+                        <a href="#pricing" class="btn btn-ember">View Our Products</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        </section>
+        <!-- ============================================================
+       PRICING / PRODUCTS
+  ============================================================ -->
+
+        <section id="pricing">
+            <div class="container">
+
+
+                <div class="pricing-header reveal">
+                    <span class="section-label">Pricing &amp; Products</span>
+                    <h2 class="section-title">Choose Your Load</h2>
+                    <p class="section-sub">
+                        Straightforward pricing with no hidden fees. Need a custom amount?
+                        Just give us a call—we'll work something out.
+                    </p>
+                </div>
+
+                <div class="pricing-grid">
+
+                    <!-- Tier 1 -->
+                    <div class="price-card reveal reveal-delay-1">
+                        <div class="price-top">
+                            <span class="price-name">Starter Load</span>
+                            <div class="price-amount-row">
+                                <span class="price-amount">$10</span>
+                                <span class="price-unit">/ Bundles</span>
+                            </div>
+                        </div>
+                        <p class="price-desc">
+                            Perfect for occasional use campfires, cabins, slow burning, or testing out our service.
+                        </p>
+                        <div class="price-divider"></div>
+                        <ul class="price-features">
+                            <li class="price-feature">5 for $45</li>
+                            <li class="price-feature">Approx. size of an armful</li>
+                            <li class="price-feature">Seasoned, split &amp; ready</li>
+                            <li class="price-feature">Standard delivery included</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-ember"
+                            style="margin-top:8px;justify-content:center;">Order
+                            Starter Load</a>
+                    </div>
+
+                    <!-- Tier 2 – Featured -->
+                    <div class="price-card featured reveal reveal-delay-2">
+                        <div class="featured-badge">Most Popular</div>
+                        <div class="price-top">
+                            <span class="price-name">Half Cord</span>
+                            <div class="price-amount-row">
+                                <span class="price-amount">$300</span>
+                                <span class="price-unit">/ half cord</span>
+                            </div>
+                        </div>
+                        <p class="price-desc">
+                            Our most popular option. Great for homeowners who want a solid season's supply
+                            without going all-in. Reliable, consistent, and great value.
+                        </p>
+                        <div class="price-divider"></div>
+                        <ul class="price-features">
+                            <li class="price-feature">Birch option for $350</li>
+                            <li class="price-feature">Approx. 64 cubic feet</li>
+                            <li class="price-feature">Seasoned, split &amp; ready</li>
+                            <li class="price-feature">Priority delivery scheduling</li>
+                            <li class="price-feature">Mixed or single-species wood</li>
+                            <li class="price-feature">Stacking service available</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-ember" style="margin-top:8px;justify-content:center;">Order
+                            Half
+                            Cord</a>
+                    </div>
+
+                    <!-- Tier 3 -->
+                    <div class="price-card reveal reveal-delay-3">
+                        <div class="price-top">
+                            <span class="price-name">Full Cord</span>
+                            <div class="price-amount-row">
+                                <span class="price-amount">$500</span>
+                                <span class="price-unit">/ full cord</span>
+                            </div>
+                        </div>
+                        <p class="price-desc">
+                            Best value for the season. One full cord keeps most homes well-stocked
+                            through a long Alaska winter. Order once, stay warm all season.
+                        </p>
+                        <div class="price-divider"></div>
+                        <ul class="price-features">
+                            <li class="price-feature">Birch option for $650</li>
+                            <li class="price-feature">Approx. 128 cubic feet</li>
+                            <li class="price-feature">Seasoned, split &amp; ready</li>
+                            <li class="price-feature">Stacking service available</li>
+                            <li class="price-feature">Loyalty discount on reorders</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-ember"
+                            style="margin-top:8px;justify-content:center;">Order
+                            Full Cord</a>
+                    </div>
+
+                </div>
+
+                <!-- Tier 4 -->
+                <div class="price-card reveal reveal-delay-4">
+                    <div class="price-top">
+                        <span class="price-name">Add ons</span>
+                        <div class="price-amount-row">
+
+                        </div>
+                    </div>
+                    <p class="price-desc">
+                        additional bundles, kindling, fire starters, custom cuts, and more. Perfect for topping off.
+                    </p>
+                    <div class="price-divider"></div>
+                    <ul class="price-features">
+                        <li class="price-feature">Kindling bundles $10 each</li>
+                        <li class="price-feature">Fire starters $5 (per pack)</li>
+                        <li class="price-feature">Custom cuts available (short stove length)</li>
+                        <li class="price-feature">Stacking service: $25 (Bundles/small orders)</li>
+                        <li class="price-feature">Stacking service: $50-75 (Half or full cord)</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline-ember"
+                        style="margin-top:8px;justify-content:center;">Order Now</a>
+                </div>
+
+            </div>
+
+            <!-- Custom loads note -->
+            <p style="text-align:center;margin-top:40px;font-size:0.9rem;color:var(--muted);">
+                Need a custom load or bulk order?
+                <a href="#contact" style="color:var(--ember);font-weight:700;"> Contact us directly →</a>
+            </p>
+
+            </div>
+
+            <div style="margin-top:40px; text-align:center; color:var(--muted); font-size:0.9rem;">
+                <p><strong>Delivery Fees:</strong> $50–$100 depending on distance from Anchorage.</p>
+                <p>$25-$50 for local delivery • (Price depends on distance & load size)</p>
+            </div>
+
+
+        </section>
+
+        <!-- ============================================================
+       DELIVERY INFO
+  ============================================================ -->
+
+        <section id="delivery">
+            <div class="container">
+                <div class="delivery-grid">
+
+
+                    <!-- Steps -->
+                    <div class="reveal">
+                        <span class="section-label">How It Works</span>
+                        <h2 class="section-title" style="margin-bottom:40px;">Simple. Reliable. Done Right.</h2>
+
+                        <div class="delivery-steps">
+                            <div class="step">
+                                <div class="step-num">1</div>
+                                <div class="step-body">
+                                    <h4 class="step-title">Place Your Order</h4>
+                                    <p class="step-desc">
+                                        Call, text, or use our contact form to request your load size and
+                                        preferred delivery window. We'll confirm within 24 hours.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-num">2</div>
+                                <div class="step-body">
+                                    <h4 class="step-title">We Prepare Your Load</h4>
+                                    <p class="step-desc">
+                                        Your firewood is measured, split, and loaded fresh—no short counts,
+                                        no green wood, no corners cut.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-num">3</div>
+                                <div class="step-body">
+                                    <h4 class="step-title">Delivery to Your Door</h4>
+                                    <p class="step-desc">
+                                        We deliver on your schedule. Drop-off at your driveway or back yard,
+                                        stacking available upon request.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-num">4</div>
+                                <div class="step-body">
+                                    <h4 class="step-title">Stay Warm All Season</h4>
+                                    <p class="step-desc">
+                                        Sit back, light a fire, and enjoy the warmth. Reorder anytime—
+                                        returning customers get priority scheduling.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Info Cards -->
+                    <div class="delivery-info reveal reveal-delay-2">
+
+                        <div class="info-card">
+                            <div class="info-icon">📍</div>
+                            <div>
+                                <p class="info-title">Delivery Area</p>
+                                <p class="info-text">
+                                    We currently serve the Anchorage area and surrounding
+                                    communities. Not sure if we deliver to you? Just ask—we'll let you know.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">📅</div>
+                            <div>
+                                <p class="info-title">Delivery Timeline</p>
+                                <p class="info-text">
+                                    Most orders are fulfilled within 3–5 business days. Same-week delivery
+                                    is often available depending on schedule and season.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">💳</div>
+                            <div>
+                                <p class="info-title">Payment</p>
+                                <p class="info-text">
+                                    We accept cash, Venmo, PayPal, and major credit cards. Payment is due at
+                                    time of delivery unless otherwise arranged.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">📞</div>
+                            <div>
+                                <p class="info-title">Questions? Just Call.</p>
+                                <p class="info-text">
+                                    We're real people—not a call center. Reach us directly at
+                                    <strong>(907) 799-2838</strong> and we'll answer your questions straight.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- ============================================================
+       TESTIMONIALS
+  ============================================================ -->
+
+        <section id="testimonials">
+            <div class="container">
+
+
+                <div class="testimonials-header reveal">
+                    <span class="section-label">What Customers Say</span>
+                    <h2 class="section-title">Trusted by Alaska Homeowners</h2>
+                    <p class="section-sub">
+                        Don't take our word for it—here's what people are saying about
+                        574 Alaska Firewood.
+                    </p>
+                </div>
+
+                <div class="testimonials-grid">
+
+                    <div class="testimonial-card reveal reveal-delay-1">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">
+                            "Ordered a half cord and it was delivered on time, perfectly stacked,
+                            and every piece was dry and ready to burn. No more dealing with sketchy
+                            Craigslist sellers. This is my go-to now."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MK</div>
+                            <div>
+                                <p class="author-name">Mike K.</p>
+                                <p class="author-loc">North Pole, AK</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card reveal reveal-delay-2">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">
+                            "These guys are the real deal. I've ordered three times this winter and
+                            every cord has been honest weight and high-quality wood. Fast delivery
+                            and great communication throughout."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SL</div>
+                            <div>
+                                <p class="author-name">Sarah L.</p>
+                                <p class="author-loc">Fairbanks, AK</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card reveal reveal-delay-3">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">
+                            "I appreciated how straightforward everything was. Called in, got a quote,
+                            and wood was at my house two days later. Exactly what was promised.
+                            Will absolutely be ordering again before next winter."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">TR</div>
+                            <div>
+                                <p class="author-name">Tom R.</p>
+                                <p class="author-loc">Ester, AK</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- ============================================================
+       CTA BAND
+  ============================================================ -->
+
+        <section id="cta">
+            <div class="container">
+                <div class="cta-inner reveal">
+                    <span class="section-label">Ready to Order?</span>
+                    <h2 class="cta-title">Get Your Firewood Delivered Today</h2>
+                    <p class="cta-sub">
+                        Don't wait until the cold hits. Secure your load now and we'll get you
+                        on the schedule—fast, reliable, and always quality wood.
+                    </p>
+                    <div class="cta-actions">
+                        <a href="#pricing" class="btn btn-ember">🔥 Order Now</a>
+                        <a href="tel:(907) 799-2838" class="btn btn-outline-cream">📞 Call Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+
+
+                <div class="features-header reveal">
+                    <span class="section-label">Get In Touch</span>
+                    <h2 class="section-title">Request a Delivery</h2>
+                    <p class="section-sub">
+                        Fill out the form below and we’ll get back to you within 24 hours to confirm your order.
+                    </p>
+                </div>
+
+
+                <form class="contact-form" action="https://formspree.io/f/mdayengo" method="POST">
+
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Your name" required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel" placeholder="(907) XXX-XXXX" required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="you@email.com">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>Order Size</label>
+                            <select required>
+                                <option value="">Select a load</option>
+                                <option>Starter Load</option>
+                                <option>Half Cord</option>
+                                <option>Full Cord</option>
+                                <option>Custom Order</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Delivery Address</label>
+                        <input type="text" placeholder="Where should we deliver?" required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Notes</label>
+                        <textarea rows="4" placeholder="Anything we should know? (stacking, timing, etc.)"></textarea>
+                    </div>
+
+
+                    <button type="submit" class="btn btn-ember">Submit Request</button>
+
+
+                </form>
+
+
+            </div>
+        </section>
+
+
+        <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+        <footer id="footer">
+            <div class="container">
+
+
+                <div class="footer-top">
+
+
+                    <!-- Brand Column -->
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <img src="download.png" alt="574 Alaska Firewood Logo" class="logo-img" />
+                            <div class="logo-text">
+                                <span class="logo-name">Alaska Firewood</span>
+                                <span class="logo-sub">LLC</span>
+                            </div>
+                        </div>
+
+
+                        <p class="footer-tagline">
+                            Premium firewood delivered with reliability and pride across
+                            Interior Alaska. Quality you can feel. Service you can count on.
+                        </p>
+
+
+                        <div class="footer-contact">
+                            <a href="tel:9077992838">📞 (907) 799-2838</a>
+                            <a href="mailto:info@574alaskafirewood.com">✉️ info@574alaskafirewood.com</a>
+                            <a href="#">📍 Fairbanks, Alaska</a>
+                        </div>
+                    </div>
+
+
+                    <!-- Nav Column -->
+                    <div class="footer-col">
+                        <h4>Navigate</h4>
+                        <ul class="footer-links">
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#features">Why Us</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#delivery">Delivery</a></li>
+                        </ul>
+                    </div>
+
+
+                    <!-- Products Column -->
+                    <div class="footer-col">
+                        <h4>Products</h4>
+                        <ul class="footer-links">
+                            <li><a href="#pricing">Starter Load</a></li>
+                            <li><a href="#pricing">Half Cord</a></li>
+                            <li><a href="#pricing">Full Cord</a></li>
+                            <li><a href="#footer">Custom Orders</a></li>
+                            <li><a href="#delivery">Stacking Service</a></li>
+                        </ul>
+                    </div>
+
+
+                    <!-- Service Column -->
+                    <div class="footer-col">
+                        <h4>Service Areas</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Fairbanks</a></li>
+                            <li><a href="#">North Pole</a></li>
+                            <li><a href="#">Wasilla</a></li>
+                            <li><a href="#">Anchorage</a></li>
+                            <li><a href="#">Palmer</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+                <div class="footer-bottom">
+                    <p class="footer-copy">© 2025 574 Alaska Firewood LLC. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </footer>
+
+
+
+        <!-- ============================================================
+       JAVASCRIPT – Navbar scroll, mobile menu, reveal animations
+  ============================================================ -->
+
+        <script>
+            // --- Navbar: add .scrolled class on scroll ---
+            const navbar = document.getElementById('navbar');
+            // Always show background since hero is full-page
+            navbar.classList.add('scrolled');
+
+            window.addEventListener('scroll', () => {
+                navbar.classList.add('scrolled');
+            });
+
+            // --- Mobile menu toggle ---
+            const toggle = document.getElementById('navToggle');
+            const mobileMenu = document.getElementById('navMobile');
+            let menuOpen = false;
+
+            toggle.addEventListener('click', () => {
+                menuOpen = !menuOpen;
+                mobileMenu.style.display = menuOpen ? 'flex' : 'none';
+                toggle.children[0].style.transform = menuOpen ? 'rotate(45deg) translate(5px, 5px)' : '';
+                toggle.children[1].style.opacity = menuOpen ? '0' : '1';
+                toggle.children[2].style.transform = menuOpen ? 'rotate(-45deg) translate(5px, -5px)' : '';
+            });
+
+            // Close mobile menu on link click
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menuOpen = false;
+                    mobileMenu.style.display = 'none';
+                    toggle.children[0].style.transform = '';
+                    toggle.children[1].style.opacity = '1';
+                    toggle.children[2].style.transform = '';
+                });
+            });
+
+            // --- Scroll Reveal ---
+            const revealEls = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('visible');
+                        observer.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+
+            revealEls.forEach(el => observer.observe(el));
+
+            // Reveal hero content immediately
+            document.querySelectorAll('#hero .hero-content > *').forEach((el, i) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = `opacity 0.7s ease ${i * 0.12}s, transform 0.7s ease ${i * 0.12}s`;
+                requestAnimationFrame(() => {
+                    setTimeout(() => {
+                        el.style.opacity = '1';
+                        el.style.transform = 'translateY(0)';
+                    }, 100 + i * 120);
+                });
+            });
+        </script>
+
+</body>
+
+</html>
